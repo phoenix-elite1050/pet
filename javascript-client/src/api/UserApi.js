@@ -29,7 +29,7 @@
     root.SwaggerPetstore.UserApi = factory(root.SwaggerPetstore.ApiClient, root.SwaggerPetstore.User);
   }
 }(this, function(ApiClient, User) {
-  'use strict';
+ // 'use strict';
 
   /**
    * User service.

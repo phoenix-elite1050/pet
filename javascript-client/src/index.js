@@ -23,7 +23,7 @@
     module.exports = factory(require('./ApiClient'), require('./model/ApiResponse'), require('./model/Category'), require('./model/Order'), require('./model/Pet'), require('./model/Tag'), require('./model/User'), require('./api/PetApi'), require('./api/StoreApi'), require('./api/UserApi'));
   }
 }(function(ApiClient, ApiResponse, Category, Order, Pet, Tag, User, PetApi, StoreApi, UserApi) {
-  'use strict';
+  //'use strict';
 
   /**
    * This_is_a_sample_server_Petstore_server___You_can_find_out_more_about_____Swagger_at__httpswagger_io_httpswagger_io_or_on__irc_freenode_net_swagger_httpswagger_ioirc_______For_this_sample_you_can_use_the_api_key_special_key_to_test_the_authorization_____filters_.<br>

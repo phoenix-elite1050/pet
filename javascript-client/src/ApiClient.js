@@ -29,7 +29,7 @@
     root.SwaggerPetstore.ApiClient = factory(root.superagent, root.querystring);
   }
 }(this, function(superagent, querystring) {
-  'use strict';
+  //'use strict';
 
   /**
    * @module ApiClient
@@ -459,7 +459,7 @@
             error = err;
           }
         }
-        callback(error, data, response);
+        return callback(error, data, response);
       }
     });
 
@@ -485,8 +485,9 @@
    * @returns An instance of the specified type or null or undefined if data is null or undefined.
    */
   exports.convertToType = function(data, type) {
-    if (data === null || data === undefined)
+    if (data === null || data === undefined) {
       return data
+   }
 
     switch (type) {
       case 'Boolean':
@@ -548,8 +549,9 @@
   exports.constructFromObject = function(data, obj, itemType) {
     if (Array.isArray(data)) {
       for (var i = 0; i < data.length; i++) {
-        if (data.hasOwnProperty(i))
+        if (data.hasOwnProperty(i)) {
           obj[i] = exports.convertToType(data[i], itemType);
+	}
       }
     } else {
       for (var k in data) {

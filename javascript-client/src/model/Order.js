@@ -29,7 +29,7 @@
     root.SwaggerPetstore.Order = factory(root.SwaggerPetstore.ApiClient);
   }
 }(this, function(ApiClient) {
-  'use strict';
+  //'use strict';
 
 
 

@@ -29,7 +29,7 @@
     root.SwaggerPetstore.PetApi = factory(root.SwaggerPetstore.ApiClient, root.SwaggerPetstore.ApiResponse, root.SwaggerPetstore.Pet);
   }
 }(this, function(ApiClient, ApiResponse, Pet) {
-  'use strict';
+  //'use strict';
 
   /**
    * Pet service.
